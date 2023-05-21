@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+header > h1{
+    
+ 
+    text-align: center;
+    margin: 50PX 0PX 20px 0px;
+    font-size: 45px;
+}
+
+header > p{
+    text-align: center;
+    
+
+}
+section > blockquote{
+    margin: auto;
+    max-width: 500px;
+    font-size: 28px;
+}
+section > img{
+
+}
+section{
+    margin: auto;
+    margin-top: 20px;
+    height: 220px;
+    max-width: 1000px;
+    background:#fff;
+    color: #000;
+    margin-bottom: 20px;
+    display: flex;
+}
+footer,hr{
+    max-width: 500px;
+    margin: auto;
+}
+footer > h2{
+    margin-bottom: 10px;
+}
+hr{
+    height: 4px;
+    background-color: #fff;
+}

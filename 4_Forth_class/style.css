@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.link>ul>li>a{
+    text-decoration: none;   
+}
+.link{
+    display: flex;
+}
+.reg>ul>li{
+    list-style-type: none;
+}
+.reg{
+    display: flex;
+}
+.link>ul>li{
+    list-style-type: none;
+    
+}
+
+section{
+    
+    padding: 80px 50px;
+    background-color: #F7F7F7;
+    
+}
+.contant{
+    
+    display: inline-block;
+    max-width: 50%;
+    margin: 0px;
+}
+.contant>h1{
+    font-size: 70px;
+    color: #464646;
+}
+.contant>h2{
+    padding-top: 30px;
+    color:#51C32B;
+    font-size: 40px;
+    
+}
+.contant>p{
+    
+    padding-top: 30px;
+    font-size: 19px;
+}
+.img{
+    float: right;
+}
+                /*------- Data Entry Form ---------  */
+.form{
+    /* display: inline-block; */
+    margin: auto;
+    max-width: 800px;
+    
+    padding: 30px;
+}
+.form>h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 38px;
+    color: #464646;
+}
+.form>p{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #6C6C6C;
+}
+.form>.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.data>.text{
+    width: 300px;
+    color: #6C6C6C;
+}
+
+.data>.text > input,select{
+    width: 100%;
+    height: 30px;
+    margin:10px 0px;
+    outline-style: none;
+}
+form>.btn{
+    display: block;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 50px;
+    font-size: 18px;
+    border: none;
+    background-color: #51C32B;
+    color: #fff;
+    cursor: pointer;
+}
+#link{
+    text-decoration: none;
+    color: #51C32B;
+}
+
+                /*------- Footer section ---------  */
+
+footer{
+    background-color: #666666;
+    padding: 30px 0px;
+}
+footer>p{
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 18px;
+    padding-top: 20px;
+}
