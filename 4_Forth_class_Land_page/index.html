@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../4_Forth_class_Land_page/fabicon/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../4_Forth_class_Land_page/fabicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../4_Forth_class_Land_page/fabicon//favicon-16x16.png">
+    <link rel="manifest" href="../4_Forth_class_Land_page/fabicon//site.webmanifest">
+    <link rel="mask-icon" href="../4_Forth_class_Land_page/fabicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>UpWork</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
 <body>
-    <nav>
-        <div class="nav">
-            <img src="../4_Forth_class/image/logo.png" alt="logo" width="150px">
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../4_Forth_class_Land_page/image/logo.png" alt="logo" width="150px">
         </div>
         <div class="link">
-            <ul>
-                <li><a href="" >Job</a></li>
-                <li><a href="">Freelancer</a></li>
-                <li><a href="">Report</a></li>
-                <li><a href="">Massages</a></li>
-            </ul>
+            <a href="">Job</a>
+            <a href="">Freelancer</a>
+            <a href="">Report</a>
+            <a href="">Massages</a>
         </div>
         <div class="reg">
-            <ul>
-                <li><a href="login.html">Login</a></li> 
-                <li><a href="Sign.html">Sign</a></li>
-            </ul>
-        </div>   
+           
+            <a href="../3_Third_class/login_Page/index.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            <a href="../3_Third_class/Sign_Page/index.html"><i class="fa-solid fa-user-plus"></i> Sign</a>
+
+        </div>
     </nav>
 
     <section>
         <div class="contant">
             <h1>Upwork ebook</h1>
             <h2>The Fast Lane to Great Design</h2>
-            <p>Sem now top notch marketers get projects done faster, at the highest quality leve and within budget using freelance talent
+            <p>Sem now top notch marketers get projects done faster, at the highest quality leve and within budget using
+                freelance talent
             </p>
-            <p>From the ebock, you also learn how to</p>   
-            <p>From the ebock, you also learn how to</p>   
-            <p>From the ebock, you also learn how to</p>   
-            <p>From the ebock, you also learn how to</p>   
-            <p>From the ebock, you also learn how to</p>   
-            <p>From the ebock, you also learn how to</p>   
+            <p>From the ebock, you also learn how to</p>
+            <div class="bolit">
+                <p><i class="fa-sharp fa-solid fa-greater-than" style="color: #69ae43;"></i> Supplement your in auge design team with freelance designers</p>
+                <P><i class="fa-sharp fa-solid fa-greater-than" style="color: #69ae43;"></i>  Divide tasks among freelance and in house teoma</p>
+                <P><i class="fa-sharp fa-solid fa-greater-than" style="color: #69ae43;"> </i> Best communicate and colaborate with freelance designers
+                </p>
+            </div>
+
+            <p>Get your smart tios now Download the ebook by filling out the form</p>
+           
         </div>
         <div class="img">
-            <img src="../4_Forth_class/image/Phone.jpg" alt="Photo" width="450px">
+            <img src="../4_Forth_class_Land_page/image/Phone.jpg" alt="Photo" width="450px">
         </div>
     </section>
 
     <!-------- Data Entry Form -------->
 
-    <form action="" class="form" >
+    <form action="" class="form">
         <h2>Get The ebook</h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <div class="data">
@@ -104,16 +132,32 @@
             </div>
         </div>
         <button class="btn">Downlod Now</button>
-        <p >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam. <a href="www.upwork.com" id="link" target="_blank">Upwork's Privacy Policy.</a>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam. <a href="www.upwork.com" id="link"
+                target="_blank">Upwork's Privacy Policy.</a>
         </p>
     </form>
 
-        <!-------- Footer Section -------->
+    <!-------- Footer Section -------->
     <footer>
         <p><em>Follow us </em></p>
         <p>This is the parts of Fab icon</p>
         <p>&copy; 2019 Global Inc.</p>
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/aa964024b2.js" crossorigin="anonymous"></script>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
 </html>
